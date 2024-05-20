@@ -1,7 +1,40 @@
 import React from 'react';
+import styled from 'styled-components'
 
 import { Button } from './Button';
-import './header.css';
+
+const StyledHeader = styled.div`
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const StyledSvg = styled.svg`
+  display: inline-block;
+  vertical-align: top;
+`;
+
+const StyledH1 = styled.h1`
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  margin: 6px 0 6px 10px;
+  display: inline-block;
+  vertical-align: top;
+`;
+
+const StyledSpan = styled.span`
+  color: #333;
+  font-size: 14px;
+  margin-right: 10px;
+`;
+
+const StyledButton = styled(Button)`
+  margin-left: 10px;
+`;
 
 type User = {
   name: string;
@@ -16,9 +49,9 @@ interface HeaderProps {
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
-    <div className="storybook-header">
+    <StyledHeader>
       <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <StyledSvg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -33,24 +66,24 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
               fill="#91BAF8"
             />
           </g>
-        </svg>
-        <h1>Acme</h1>
+        </StyledSvg>
+        <StyledH1>Acme</StyledH1>
       </div>
       <div>
         {user ? (
           <>
-            <span className="welcome">
+            <StyledSpan>
               Welcome, <b>{user.name}</b>!
-            </span>
+            </StyledSpan>
             <Button size="small" onClick={onLogout} label="Log out" />
           </>
         ) : (
           <>
             <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <StyledButton primary size="small" onClick={onCreateAccount} label="Sign up" />
           </>
         )}
       </div>
-    </div>
+    </StyledHeader>
   </header>
 );
