@@ -1,0 +1,202 @@
+============ CSS ============
+<head>
+	<style>...</style>
+	<style>
+	    .storybook-button {
+	      font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	      font-weight: 700;
+	      border: 0;
+	      border-radius: 3em;
+	      cursor: pointer;
+	      display: inline-block;
+	      line-height: 1;
+	    }
+
+	    .storybook-button--primary {
+	      color: white;
+	      background-color: #1ea7fd;
+	    }
+
+	    .storybook-button--secondary {
+	      color: #333;
+	      background-color: transparent;
+	      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+	    }
+
+	    .storybook-button--small {
+	      font-size: 12px;
+	      padding: 10px 16px;
+	    }
+	</style>
+...
+</head>
+
+<body>
+...
+	<button
+	  	type="button"
+	  	class="
+		  storybook-button
+		  storybook-button--small
+		  storybook-button--secondary
+	  	"
+	>
+      Log in
+    </button>
+    <button
+    	type="button"
+    	class="
+          storybook-button
+	      storybook-button--small
+	      storybook-button--primary
+      	"
+  	>
+  	  Sign up
+	</button>
+...
+</body>
+
+
+============ CSS Module ============
+<head>
+	<style>...</style>
+	<style>
+	    .button_storybook-button__b1sV5 {
+	      font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	      font-weight: 700;
+	      border: 0;
+	      border-radius: 3em;
+	      cursor: pointer;
+	      display: inline-block;
+	      line-height: 1;
+	    }
+
+	    .button_storybook-button--primary__CY\+Ww {
+	      color: white;
+	      background-color: #1ea7fd;
+	    }
+
+        .button_storybook-button--secondary__lUYtq {
+	      color: #333;
+	      background-color: transparent;
+	      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+	    }
+
+	    .button_storybook-button--small__eTqOh {
+	      font-size: 12px;
+	      padding: 10px 16px;
+	    }
+	</style>
+...
+</head>
+
+<body>
+...
+	<button
+	  	type="button"
+	  	class="
+		  button_storybook-button__b1sV5
+		  button_storybook-button--small__eTqOh
+		  button_storybook-button--secondary__lUYtq
+	  	"
+  	>
+      Log in
+    </button>
+    <button
+      	type="button"
+      	class="
+          button_storybook-button__b1sV5
+          button_storybook-button--small__eTqOh
+          button_storybook-button--primary__CY+Ww
+    	"
+    >
+      Sign up
+    </button>
+...
+</body>
+
+============ Styled Component ============
+<head>
+	<style>...</style>
+	<style data-styled="active" data-styled-version="6.1.11">
+	    .hbCiuQ {
+	      font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	      font-weight: 700;
+	      border: 0;
+	      border-radius: 3em;
+	      cursor: pointer;
+	      display: inline-block;
+	      line-height: 1;
+	      color: #333;
+	      background-color: transparent;
+	      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+	      font-size: 12px;
+	      padding: 10px 16px;
+	    }
+
+	    .cQSeWO {
+	      font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	      font-weight: 700;
+	      border: 0;
+	      border-radius: 3em;
+	      cursor: pointer;
+	      display: inline-block;
+	      line-height: 1;
+	      color: white;
+	      background-color: #1ea7fd;
+	      font-size: 12px;
+	      padding: 10px 16px;
+	    }
+
+        .gscrXD {
+	      margin-left: 10px;
+	    }
+
+	    ...
+	</style>
+...
+</head>
+
+<body>
+...
+	<button
+      	class="
+	      sc-aYaIB hbCiuQ
+      	"
+	>
+      Log in
+    </button>
+    <button
+    	class="
+    	  sc-aYaIB cQSeWO
+    	  sc-iGgVNO gscrXD
+		"
+	>
+    	Sign up
+    </button>
+...
+</body>
+
+============ SASS ============
+<head>
+	<style>...</style>
+	<style>
+
+	</style>
+...
+</head>
+
+<body>
+...
+	<button
+	  type="button"
+    >
+      Log in
+    </button>
+    <button
+	  type="button"
+	>
+    	Sign up
+    </button>
+...
+</body>
