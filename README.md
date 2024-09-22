@@ -1,3 +1,11 @@
+# Stylin' in React.js
+## A Comparison of Using CSS, SASS, Styled Components, and CSS Modules with React
+
+A sandbox project used for comparisons and references in a Medium article regarding global CSS, local CSS, CSS Modules, SASS & styled components. `main` represents the local CSS files case. Each other CSS pattern is represented by a separate branch with a corresponding name.
+
+The project combines the 'Hello World' [Create React App](https://github.com/facebook/create-react-app) with the [Storybook](https://storybook.js.org/) demo app in order to have a simple & testable UX with just enough complexity to illustrate some different CSS effects that are interesting conversion problems between the different CSS patterns.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
