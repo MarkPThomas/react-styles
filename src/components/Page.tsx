@@ -15,6 +15,10 @@ const SectionAppHeader = styled.section`
   color: white;
 `;
 
+const AppLink = styled.a`
+  color: #61dafb;
+`;
+
 const appLogoSpin = keyframes`
   from {
     transform: rotate(0deg);
@@ -39,10 +43,6 @@ const AppLogo = styled.img`
   ${media.noPreferenceReducedMotion} {
     animation: ${appLogoSpin} infinite 20s linear;
   }
-`;
-
-const AppLink = styled.a`
-  color: #61dafb;
 `;
 
 const SectionStorybookPage = styled.section`
