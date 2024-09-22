@@ -2,6 +2,7 @@ import React from 'react';
 
 import logo from './assets/logo.svg';
 import { Header } from './Header';
+import './page.css';
 
 type User = {
   name: string;
